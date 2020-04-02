@@ -30,10 +30,15 @@ require( ["js/qlik"], function ( qlik ) {
 	var app = qlik.openApp('Testexterno.qvf', config);
 
 	//get objects -- inserted here --
+	app.getObject('QV01','aSGwQEy');
+	app.getObject('QV06','YyRDqu');
+	app.getObject('QV05','gedheMm');
+	app.getObject('QV08','EPmMJLK');
+	app.getObject('QV07','YrDXtY');
 	app.getObject('QV04','YyRDqu');
 	app.getObject('QV03','taRH');
 	app.getObject('QV02','jKmR');
-	app.getObject('QV01','aSGwQEy');
+	
 	
 	
 	
