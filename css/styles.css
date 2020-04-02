@@ -1,3 +1,9 @@
 .container{
   //color: #FFFFFF;
 }
+nav a.sidenav-trigger{
+  display: flex;
+}
+.background img {
+  width: 23em;
+}
