@@ -201,7 +201,56 @@
 					</div>
 				</div>
 			</div>
-		</div>
+			<!--Examples vue-->
+			<div class="row">
+				<div class="col s12">
+					<div id="app-2" class="">
+						<span v-bind:title="message">
+							Pasas el mouse por encima de mi.
+						</span>
+					</div>
+					<div id="app-3" class="">
+						<span v-if="seen">
+							Ahora me ves.
+						</span>
+						<span v-else>
+							Ahora no me ves.
+						</span>
+					</div>
+					<div id="app-4" class="">
+						<ol>
+							<li v-for="todo in todos">
+								{{todo.text}}
+							</li>
+						</ol>
+					</div>
+				</div>
+				<div id="app-5" class="">
+					<p>{{message}}</p>
+					<button v-on:click="reverseMessage" type="button" name="button" class="btn">Reverse Message</button>
+				</div>
+				</div>
+				<div id="app-6" class="">
+					<p>{{message}}</p>
+					<input v-model="message" type="text" name="" value="">
+				</div>
+				<div id="app-8" class="">
+					<h1>Hola app!</h1>
+					<p>
+
+						<router-link to="/foo">Ir a Foo </router-link>
+						<router-link to="/bar">Ir a Bar </router-link>
+
+					</p>
+
+				<router-view></router-view>
+
+				</div>
+			</div>
+		<!--//-->
+
+
+
 		<!--//-->
 		<!--Error Popup-->
 		<div id="popup">
@@ -212,6 +261,11 @@
 		<!--Vue JS v2.6.11 -->
 		<script src="js/vue-2-6-11.js"></script>
 		<!--//-->
+
+		<!--Vue-router JS v2.6.11 -->
+		<script src="js/vue-router-3-1-6.js"></script>
+		<!--//-->
+
 		<!-- Materialize JS v1.0.0-->
 		<script src="js/materialize-1-0-0.min.js" charset="utf-8"></script>
 		<!--//-->

@@ -41,3 +41,32 @@ var app5= new Vue({
     }
   }
 });
+
+var app6= new Vue({
+  el:"#app-6",
+  data:{
+    message: "Hola Vue!"
+  }
+});
+
+//Router Test
+const Foo={ template: '<div>foo</div>'};
+const Bar={ template: '<div>bar</div>'};
+
+const routes=[
+  {path: '/foo', component: Foo},
+  {path: '/bar', component: Bar}
+];
+
+const router = new VueRouter({
+  routes: routes,
+  //base:"/extensions/mashul-qlik-vue-material-cdn/mashul-qlik-vue-material-cdn.html#",
+  mode:"hash"
+});
+
+
+
+var app8 = new Vue({
+  router
+
+}).$mount('#app-8');
